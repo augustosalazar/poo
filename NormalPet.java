@@ -1,0 +1,3 @@
+class NormalPet extends Pet {
+    
+}
