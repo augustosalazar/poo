@@ -5,7 +5,6 @@ public class RescateAnimal {
     private ArrayList<Admin> admins;
     private ArrayList<Vet> vets;
     private ArrayList<Caretaker> caretakers;
-
     private ArrayList<Appoiment> appoiments;
     
 
@@ -14,6 +13,10 @@ public class RescateAnimal {
         vets  = new ArrayList<>();
         caretakers = new ArrayList<>();
         appoiments = new ArrayList<>();
+    }
+
+    public static void main(String[] args) {
+        
     }
 
 }
