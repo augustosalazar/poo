@@ -13,4 +13,14 @@ class Artista {
         this.estilos = new ArrayList<>();
     }
 
+    void addObra(Obra obra) {
+        obras.add(obra);
+        addEstilo(obra.getEstilo());
+    }
+
+    void addEstilo(Estilo estilo) {
+        // Check if the artist already has the style
+        estilos.add(estilo);
+    }
+
 }

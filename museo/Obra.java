@@ -1,7 +1,7 @@
 class Obra {
-    private Museo museo;
     private int id;
     private String nombre;
+    private Museo museo;
     private Artista artista;
     private Estilo estilo;
 
@@ -11,5 +11,16 @@ class Obra {
         this.museo = museo;
         this.artista = artista;
         this.estilo = estilo;
+
+        artista.addObra(this);
+        estilo.addObra(this);
+    }
+
+    public Estilo getEstilo() {
+        return estilo;
+    }
+
+    public Artista getArtista() {
+        return artista;
     }
 }
