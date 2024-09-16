@@ -1,3 +1,0 @@
-class Pintura extends Obra{
-    
-}
