@@ -7,7 +7,9 @@ public class Appointment {
     // Constructor
     public Appointment(int id, Doctor doctor, Patient patient) {
         this.id = id;
-        this.doctor = doctor;
         this.patient = patient;
+        patient.addAppointment(this);
+        this.doctor = doctor;
+        doctor.addAppointment(this);
     }
 }

@@ -2,7 +2,7 @@ package com.uninorte;
 import java.util.ArrayList;
 
 
-class Patient{
+public class Patient{
     private int id;
     private Ward ward;
     private Team team;
@@ -33,5 +33,9 @@ class Patient{
     }
     public void addAppointment(Appointment appoiment){
         appoiments.add(appoiment);
+    }
+
+    public Integer getNumberOfAppointments() {
+        return appoiments.size();
     }
 }

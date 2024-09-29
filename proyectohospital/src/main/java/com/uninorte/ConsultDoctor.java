@@ -1,11 +1,11 @@
 package com.uninorte;
 import java.util.ArrayList;
 
-class ConsultDoctor extends Doctor {
+public class ConsultDoctor extends Doctor {
     private ArrayList<Patient> patients;
     private Team leaderOf;
 
-    ConsultDoctor(int id,  Team team){
+    public ConsultDoctor(int id,  Team team){
         super(id, team);
         this.patients = new ArrayList<>();
     }

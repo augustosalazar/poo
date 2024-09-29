@@ -9,7 +9,6 @@ public class Team {
 
     public Team(int id) {
         this.id = id; 
-
         this.doctores = new ArrayList<>();
         patients = new ArrayList<>();
     }

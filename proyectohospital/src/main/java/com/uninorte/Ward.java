@@ -1,7 +1,8 @@
 package com.uninorte;
 import java.util.ArrayList;
 
-class Ward{
+public class Ward{
+    
     private int id;
     private ArrayList<Patient> patients;
 

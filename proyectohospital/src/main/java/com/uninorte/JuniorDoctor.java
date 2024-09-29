@@ -1,7 +1,7 @@
 package com.uninorte;
-class JuniorDoctor extends Doctor {
+public class JuniorDoctor extends Doctor {
 
-    JuniorDoctor(int id, Team team){
+    public JuniorDoctor(int id, Team team){
         super(id, team);
     }
 }

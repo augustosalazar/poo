@@ -1,28 +1,21 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
 
+import com.uninorte.*;
+
 public class HospitalTest {
     
     @Test
-    public void testDoctor() {
-        Team team = new Team(1);
-        Doctor doctor = new Doctor(1, team);
-        assertEquals(1, doctor.getId());
-        assertEquals(team, doctor.getTeam());
-    }
-
-    @Test
-    public void testWard() {
-        Ward ward = new Ward(1);
-        assertEquals(1, ward.getID());
-    }
-
-    @Test
     public void testAppointment() {
         Team team = new Team(1);
-        Doctor doctor = new Doctor(1, team);
-        Patient patient = new Patient(1);
-        Appointment appointment = new Appointment(1, doctor, patient);
+        ConsultDoctor consultDoctor = new ConsultDoctor(1, team);
+        JuniorDoctor juniorDoctor = new JuniorDoctor(2, team);
+        Ward ward = new Ward(1);
+        Patient patient = new Patient(1, ward, team);
+        Appointment appointment = new Appointment(1, juniorDoctor, patient);
+        assertEquals(1, patient.getNumberOfAppointments());
+        assertEquals(1, juniorDoctor.getNumberOfAppointments());
+
     }
 
 }
