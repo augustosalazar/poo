@@ -1,3 +1,4 @@
+package com.uninorte;
 public class Appointment {
     private int id;
     private Doctor doctor;
