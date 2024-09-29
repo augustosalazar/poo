@@ -20,11 +20,8 @@ public class Hospital {
     }
     
     public static void main(String[] args) {
-        Hospital hospital = new Hospital();
-        hospital.agregarTeam(0, 0+10); // 0 es el id del equipo, id del equipo mas 10 es el id del ConsultantDoctor
-        hospital.agregarJuniorDoctor(hospital.getTeam(0), 0+1); // recibe el equipo, el id del equipo mas 20 es el id del doctor 
-
-    
+ 
+   
     }
 
     private Team getTeam(int i) {
@@ -36,16 +33,36 @@ public class Hospital {
         return null;
     }
 
-    private void agregarJuniorDoctor(Team team, int i) {
-        JuniorDoctor juniorDoctor = new JuniorDoctor(i, team);
+    public void addJuniorDoctor(int idTeam, int idJuniorDoctor) {
+        Team team = getTeam(idTeam);
+        JuniorDoctor juniorDoctor = new JuniorDoctor(idJuniorDoctor, team);
         
     }
 
-    private void agregarTeam(int i, int j) {
+    public void createTeam(int i, int j) {
         Team team = new Team(i);
-        ConsultDoctor consultDoctor = new ConsultDoctor(j, team);
-        team.setTeamLeader(consultDoctor);
+        new ConsultDoctor(j, team);
         addTeam(team);
+    }
+
+    public Integer getNumberOfWards() {
+        return wards.size();
+    }
+
+    public int getTeaamWithMostDoctors() {
+        int max = 0;
+        int teamId = 0;
+        for (Team team : teams) {
+            if (team.getNumberOfDoctors() > max) {
+                max = team.getNumberOfDoctors();
+                teamId = team.getId();
+            }
+        }
+        return teamId;
+    }
+
+    public int getNumberOfTeams() {
+        return teams.size();
     }
 
 }

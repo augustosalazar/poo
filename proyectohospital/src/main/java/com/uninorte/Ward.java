@@ -16,4 +16,7 @@ public class Ward{
     public void addPatients(Patient patient){
         patients.add(patient);
     }
+    public Integer getNumberOfPatients() {
+        return patients.size();
+    }
 }

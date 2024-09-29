@@ -15,6 +15,8 @@ public class Patient{
         this.id= id;
         this.ward= ward;
         this.consultDoctor= team.getConsultDoctor();
+        this.team= team;
+        ward.addPatients(this);
 
         doctors= new ArrayList<Doctor>();
         appoiments= new ArrayList<Appointment>();

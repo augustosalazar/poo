@@ -7,6 +7,7 @@ public class ConsultDoctor extends Doctor {
 
     public ConsultDoctor(int id,  Team team){
         super(id, team);
+        team.setTeamLeader(this);
         this.patients = new ArrayList<>();
     }
 

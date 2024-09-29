@@ -42,5 +42,9 @@ public class Team {
         return teamLeader;
     }
 
+    public int getNumberOfDoctors() {
+        return doctores.size();
+    }
+
 
 }
