@@ -53,11 +53,7 @@ public class Editorial {
         return numeroLibros;
     }
 
-    public void mostrarPublicaciones() {
-        for (Publicacion publicacion : publicaciones) {
-            System.out.println(publicacion);
-        }
-    }
+
 
     public static void main(String[] args) {
         // Create Editorial
