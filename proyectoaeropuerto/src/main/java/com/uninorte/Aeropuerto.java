@@ -19,6 +19,14 @@ public class Aeropuerto {
         this.equipos.add(equipo);
     }
 
+    public int getNumeroAviones() {
+        return this.aviones.size();
+    }
+
+    public int getNumeroEquipos() {
+        return this.equipos.size();
+    }
+
     public static void main(String[] args) {
         System.out.println("Hello world!");
     }

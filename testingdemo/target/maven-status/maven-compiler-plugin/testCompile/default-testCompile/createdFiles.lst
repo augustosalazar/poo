@@ -1,3 +1,3 @@
-com/uninorte/unittesting/CalculatorTest.class
-com/uninorte/integrationtest/IntegrationTest.class
-com/uninorte/mocktest/MockTest.class
+com\uninorte\unittesting\CalculatorTest.class
+com\uninorte\integrationtest\IntegrationTest.class
+com\uninorte\mocktest\MockTest.class
